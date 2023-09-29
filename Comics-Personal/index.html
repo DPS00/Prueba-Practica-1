@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/app.js" defer ></script>
+    <style>
+    #container-comics {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 10px;
+      row-gap: 35px;
+    }
+
+    .card{
+      min-width: 20vh;
+    }
+    .card-img-top{
+      width: 100%;
+      height: auto;
+      box-shadow: 3px 3px 8px;
+      transition: all 0.5s ease;
+      cursor: pointer;
+    }
+    .card-img-top:hover{
+      /* transform: scale(1.05,1.05); */
+      transform:matrix(1.05, 0, 0, 1.05, 0, -5);
+      transition: all 1s ease;
+    }
+    </style>
+</head>
+
+<body>
+
+    <div id="container-comics">
+
+    </div>
+
+
+
+</body>
+</html>
